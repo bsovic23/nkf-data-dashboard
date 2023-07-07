@@ -2,6 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Typewriter } from 'react-simple-typewriter';
 
+// Component Imports
+import Navbar from '../components/Navbar';
+
 const Home = () => {
     const words = [
                         'Can you tell me how many videos per FY the NKF has uploaded?', 
@@ -14,9 +17,9 @@ const Home = () => {
   
     return(
         <section class='home'>
-            <div>
+            <header>
                 HEADER HERE WITH "NKF Data Dashboard", "Designed, Coded, and Devloped By Brit Sovic" and "Last Updated" Sections
-            </div>
+            </header>
             <div>
                 <Typewriter 
                     words={words}
@@ -27,8 +30,8 @@ const Home = () => {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-4">NAV BAR WILL GO IN THIS COLUMN SINCE SMALLER</div>
-                    <div className="col-sm-8">
+                    <div className="col-sm-3"><Navbar /></div>
+                    <div className="col-sm-5">
                         <img
                         class="logo"
                         src={require("../pictures/nkf_logo.jpg")}
@@ -37,6 +40,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <footer>
+                FOOTER HERE
+            </footer>
         </section>
     )
 };
