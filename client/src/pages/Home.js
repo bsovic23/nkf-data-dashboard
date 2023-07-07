@@ -3,9 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Typewriter } from 'react-simple-typewriter';
 
 // Component Imports
+import Header from '../components/Header';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
-const Home = () => {
+function Home() {
     const words = [
                         'Can you tell me how many videos per FY the NKF has uploaded?', 
                         'PROC FREQ data=work.original_nkf_youtube; TITLE "Videos per FY"; table fy; RUN;', 
@@ -14,11 +16,20 @@ const Home = () => {
                         'DATA work.transplant_s1; SET work.original_nkf_transplant; IF survey_number=1 THEN OUTPUT; RUN;',
                         'There were 26 people who completed a baseline trasnplant survey!',
                     ];
+    
+    const homeNavbar = [
+        {id: 1, text: 'YouTube'},
+        {id: 2, text: 'RRT'},
+        {id: 3, text: 'Clinical Bulletins'},
+        {id: 4, text: 'CME'},
+        {id: 5, text: 'Transplant Program'},
+        {id: 6, text: 'Submit Suggestion/Error'}
+    ];
   
     return(
         <section class='home'>
             <header>
-                HEADER HERE WITH "NKF Data Dashboard", "Designed, Coded, and Devloped By Brit Sovic" and "Last Updated" Sections
+                <Header  />
             </header>
             <div>
                 <Typewriter 
@@ -30,7 +41,11 @@ const Home = () => {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-3"><Navbar /></div>
+                    <div class='navbar-intro'>
+                        <h1>Navbar</h1>
+                        <p>What would you like to look at:</p>
+                    </div>
+                    <div className="col-sm-3"><Navbar navElements={homeNavbar}/></div>
                     <div className="col-sm-5">
                         <img
                         class="logo"
@@ -41,7 +56,7 @@ const Home = () => {
                 </div>
             </div>
             <footer>
-                FOOTER HERE
+                <Footer />
             </footer>
         </section>
     )
