@@ -31,22 +31,25 @@ function Home() {
             <header>
                 <Header  />
             </header>
-            <div>
-                <Typewriter 
-                    words={words}
-                    typeSpeed={20}
-                    deleteSpeed={10}
-                    delaySpeed={2000}
-                />
+            <div class='typewriter-box'>
+                <div class='typewriter'>
+                    <Typewriter 
+                        words={words}
+                        typeSpeed={30}
+                        deleteSpeed={10}
+                        delaySpeed={2000}
+                    />
+                </div>
             </div>
             <div className="container">
                 <div className="row">
+                    <div className="col-sm-6">
                     <div class='navbar-intro'>
                         <h1>Navbar</h1>
-                        <p>What would you like to look at:</p>
                     </div>
-                    <div className="col-sm-3"><Navbar navElements={homeNavbar}/></div>
-                    <div className="col-sm-5">
+                        <Navbar navElements={homeNavbar}/>
+                    </div>
+                    <div className="col-sm-6">
                         <img
                         class="logo"
                         src={require("../pictures/nkf_logo.jpg")}

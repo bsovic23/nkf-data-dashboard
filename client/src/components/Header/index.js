@@ -4,7 +4,9 @@ function Header() {
     return(
         <section class='header'>
             <div>
-                <h1>NATIONAL KIDNEY FOUNDATION DATA DASHBOARD</h1>
+                <h1>
+                    NATIONAL KIDNEY FOUNDATION <br/> DATA DASHBOARD
+                </h1>
             </div>
             <div>
                 <p>Designed, Programmed, and Engineered by Brit Sovic</p>
