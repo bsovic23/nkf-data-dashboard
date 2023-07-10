@@ -14,7 +14,7 @@ function Home() {
                         'We have released 10 videos in 2021, 20 videos in 2022, and 30 videos in 2023', 
                         'What about how many people have filled out a baseline transplant survey?',
                         'DATA work.transplant_s1; SET work.original_nkf_transplant; IF survey_number=1 THEN OUTPUT; RUN;',
-                        'There were 26 people who completed a baseline trasnplant survey!',
+                        'There were 26 people who completed a baseline transplant survey!',
                     ];
     
     const homeNavbar = [
