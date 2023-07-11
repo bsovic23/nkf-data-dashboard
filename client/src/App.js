@@ -7,6 +7,9 @@ import Home from './pages/Home';
 import Youtube from './pages/Youtube';
 import NoMatch from './pages/NoMatch';
 
+// Components TEST
+import LineGraph from '../src/components/Graphs/Line';
+
 function App() {
   return (
     <section class='application'>
