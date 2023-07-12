@@ -23,6 +23,10 @@ function App() {
             path="/youtube"
             element={<Youtube />}
           />
+          <Route
+            path="/linegraph"
+            element={<LineGraph />}
+          />
            <Route
             path="*"
             element={<NoMatch />}
