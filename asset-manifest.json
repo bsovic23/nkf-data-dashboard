@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nkf-data-dashboard/static/css/main.71c5c7a0.css",
+    "main.js": "/nkf-data-dashboard/static/js/main.6da97bde.js",
+    "static/media/nkf_logo.jpg": "/nkf-data-dashboard/static/media/nkf_logo.d8756ccadaeec6623ad3.jpg",
+    "index.html": "/nkf-data-dashboard/index.html",
+    "main.71c5c7a0.css.map": "/nkf-data-dashboard/static/css/main.71c5c7a0.css.map",
+    "main.6da97bde.js.map": "/nkf-data-dashboard/static/js/main.6da97bde.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71c5c7a0.css",
+    "static/js/main.6da97bde.js"
+  ]
+}
