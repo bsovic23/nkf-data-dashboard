@@ -15,11 +15,11 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/"
+            path="/nkf-data-dashboard"
             element={<Home />}
           />
           <Route
-            path="/youtube"
+            path="/nkf-data-dashboard/youtube"
             element={<Youtube />}
           />
            <Route
