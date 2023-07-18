@@ -45,7 +45,7 @@ function Home() {
                 <div className="row">
                     <div className="col-sm-6">
                     <div class='navbar-intro'>
-                        <h1>Navbar</h1>
+                        <h1>Navbar insert here</h1>
                     </div>
                         <Navbar navElements={homeNavbar}/>
                     </div>
