@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Youtube from './pages/Youtube';
 import NoMatch from './pages/NoMatch';
 
+// TEST COMPONENTS
+
 function App() {
   return (
     <section class='application'>

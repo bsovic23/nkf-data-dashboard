@@ -7,9 +7,6 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-// TEST SECTION
-import Youtube from '../pages/Youtube';
-
 function Home() {
     const words = [
                         'Can you tell me how many videos per FY the NKF has uploaded?', 
